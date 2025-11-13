@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal website of a teenage tech enthusiast passionate about cybersecurity and AI">
+    <title>Tech Enthusiast | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">Tech Portfolio</div>
+            <ul class="nav-menu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1 class="hero-title">Hi, I'm a Tech Enthusiast</h1>
+            <p class="hero-subtitle">Exploring Cybersecurity & Artificial Intelligence</p>
+            <a href="#projects" class="btn-primary">View My Work</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <p>I'm a teenage tech enthusiast passionate about making the digital world safer and smarter. My journey in technology began with a curiosity about how things work, which led me to explore the fascinating worlds of cybersecurity and artificial intelligence.</p>
+                <p>When I'm not coding or learning about security vulnerabilities, you can find me experimenting with machine learning models, participating in CTF challenges, or sharing my knowledge with the tech community.</p>
+                <div class="skills">
+                    <h3>Areas of Interest</h3>
+                    <ul class="skills-list">
+                        <li>Cybersecurity & Ethical Hacking</li>
+                        <li>Machine Learning & AI</li>
+                        <li>Web Development</li>
+                        <li>Network Security</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects-section">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <div class="projects-grid">
+                <!-- Cybersecurity Projects -->
+                <div class="project-card">
+                    <div class="project-category">Cybersecurity</div>
+                    <h3 class="project-title">Network Scanner Tool</h3>
+                    <p class="project-description">A Python-based network scanning tool that helps identify open ports and potential vulnerabilities in local networks. Features include service detection and basic vulnerability assessment.</p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Networking</span>
+                        <span class="tag">Security</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-category">Cybersecurity</div>
+                    <h3 class="project-title">Password Strength Analyzer</h3>
+                    <p class="project-description">An educational tool that analyzes password strength using multiple criteria including entropy calculation, common pattern detection, and breach database checking.</p>
+                    <div class="project-tags">
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Security</span>
+                        <span class="tag">Web</span>
+                    </div>
+                </div>
+
+                <!-- AI Projects -->
+                <div class="project-card">
+                    <div class="project-category">Artificial Intelligence</div>
+                    <h3 class="project-title">Sentiment Analysis Bot</h3>
+                    <p class="project-description">A machine learning model that analyzes text sentiment using Natural Language Processing. Trained on social media data to understand context and emotional tone.</p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">NLP</span>
+                        <span class="tag">TensorFlow</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-category">Artificial Intelligence</div>
+                    <h3 class="project-title">Smart Image Classifier</h3>
+                    <p class="project-description">A convolutional neural network that classifies images into various categories. Built with transfer learning techniques for improved accuracy with limited training data.</p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">CNN</span>
+                        <span class="tag">PyTorch</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="contact-intro">Have a question or want to collaborate? Feel free to reach out!</p>
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn-primary">Send Message</button>
+            </form>
+            <div id="formMessage" class="form-message"></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Tech Portfolio. Built with passion for technology.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
